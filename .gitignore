@@ -1,0 +1,14 @@
+# IDE
+.project
+.settings/
+.vscode/
+.idea/
+.output.txt
+
+# Zensical
+site/
+.cache/
+
+# uv / Python
+.venv/
+__pycache__/
