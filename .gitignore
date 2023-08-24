@@ -1,0 +1,10 @@
+# IDE
+.project
+.settings/
+.vscode/
+.idea/
+
+# Jekyll
+.bundle/
+Gemfile.lock
+_site/

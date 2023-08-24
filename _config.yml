@@ -1,0 +1,11 @@
+---
+name: J.Goutin
+title: J.Goutin
+theme: jekyll-theme-hacker
+github:
+   is_project_page: false
+exclude:
+  - license.md
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
