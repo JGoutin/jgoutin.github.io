@@ -1,0 +1,1 @@
+Freelance Solutions Architect specializing in Python, AWS, and DevOps. Creator of [stdapi.ai](https://stdapi.ai) — bringing OpenAI SDK compatibility to AWS AI services. Making cloud & AI accessible to developers.
