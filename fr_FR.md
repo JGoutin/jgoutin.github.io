@@ -28,7 +28,6 @@ N'hésitez pas à me contacter pour discuter de vos besoins.
 [<img alt="Email" src="assets/protonmail.svg" width="32">](mailto:contact@jgoutin.dev)
 [<img alt="GitHub" src="assets/github.svg" width="32">](https://github.com/jgoutin)
 [<img alt="Linkedin" src="assets/linkedin.svg" width="32">](https://www.linkedin.com/in/jgoutin)
-[<img alt="Malt" src="assets/malt.svg" width="32">](https://www.malt.fr/profile/jgoutin)
 
 [<img alt="CV" src="assets/pdf.svg" width="32">](assets/fr_FR/CV J.Goutin.pdf) CV / Dossier ESN
 

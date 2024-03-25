@@ -25,7 +25,6 @@ Feel free to contact me to discuss your needs.
 [<img alt="Email" src="assets/protonmail.svg" width="32">](mailto:contact@jgoutin.dev)
 [<img alt="GitHub" src="assets/github.svg" width="32">](https://github.com/jgoutin)
 [<img alt="Linkedin" src="assets/linkedin.svg" width="32">](https://www.linkedin.com/in/jgoutin)
-[<img alt="Malt" src="assets/malt.svg" width="32">](https://www.malt.fr/profile/jgoutin)
 
 ## Expertise
 
