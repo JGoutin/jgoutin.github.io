@@ -2,6 +2,7 @@
 name: J.Goutin
 title: J.Goutin
 theme: jekyll-theme-hacker
+repository: jgoutin/jgoutin.github.io
 github:
    is_project_page: false
 exclude:
@@ -9,3 +10,5 @@ exclude:
   - readme.md
   - Gemfile
   - Gemfile.lock
+  - linkedin/
+  - vendor/

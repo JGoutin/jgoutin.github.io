@@ -1,6 +1,6 @@
 ---
 title: Présentation
-desc: Expert freelance en Python, cloud AWS & DevOps
+desc: Architecte de solutions. Expert freelance en logiciel, cloud, & DevOps
 lang: fr_FR
 ---
 ## Présentation
@@ -29,13 +29,15 @@ N'hésitez pas à me contacter pour discuter de vos besoins.
 [<img alt="GitHub" src="assets/github.svg" width="32">](https://github.com/jgoutin)
 [<img alt="Linkedin" src="assets/linkedin.svg" width="32">](https://www.linkedin.com/in/jgoutin)
 
-[<img alt="CV" src="assets/pdf.svg" width="32">](assets/fr_FR/CV J.Goutin.pdf) CV / Dossier ESN
+CV / Dossier ESN : [<img alt="CV" src="assets/pdf.svg" width="32">](assets/fr_FR/CV_J_Goutin.pdf) / [web](assets/fr_FR/CV_J_Goutin)
+
+[Projets](assets/fr_FR/projets)
 
 ## Expertise
 
 *En résumé : Je suis principalement un développeur logiciel 
 <img src="assets/python.svg" width="16"> Python, 
-un architect cloud <img src="assets/amazonaws.svg" width="16"> AWS, 
+un architecte cloud <img src="assets/amazonaws.svg" width="16"> AWS, 
 et un DevOps.*
 
 Voici une description plus détaillée de mon expertise :
@@ -87,8 +89,22 @@ En outre, j'ai également une certaine expérience avec
 
 J'ai une forte expérience des pipelines CI/CD et je suis capable de les automatiser 
 entièrement depuis les tests jusqu'au déploiement dans des environnements cloud avec
-<img src="assets/githubactions.svg" width="16"> GitHub Actions et 
+<img src="assets/githubactions.svg" width="16"> GitHub Actions, 
+<img src="assets/gitlab.svg" width="16"> GitLab CI/CD, et 
 <img src="assets/azurepipelines.svg" width="16"> Azure Pipeline.
+
+### Intelligence Artificielle & LLM
+
+J'ai de l'expérience dans le déploiement et la gestion de modèles de langage en 
+production (LLMOps), incluant l'architecture de plateformes IA d'entreprise avec 
+gouvernance des données.
+
+J'ai mis en place des systèmes RAG (Retrieval-Augmented Generation) pour enrichir les 
+réponses des LLM avec des documents internes, ainsi que des chatbots IA et des 
+assistants de développement.
+
+Mon expérience inclut l'utilisation d'<img src="assets/amazonaws.svg" width="16"> AWS 
+Bedrock pour l'accès à des modèles de langage variés.
 
 ### Administration système
 
@@ -113,7 +129,7 @@ En outre, j'utilise également
 
 J'ai également de l'expérience avec
 <img src="assets/windows.svg" width="16"> Microsoft Windows 
-(toutes versions autre que "server").
+(toutes versions autres que "server").
 
 ### Analyse de données
 

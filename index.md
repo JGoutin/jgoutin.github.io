@@ -26,6 +26,10 @@ Feel free to contact me to discuss your needs.
 [<img alt="GitHub" src="assets/github.svg" width="32">](https://github.com/jgoutin)
 [<img alt="Linkedin" src="assets/linkedin.svg" width="32">](https://www.linkedin.com/in/jgoutin)
 
+Resume: [<img alt="Resume" src="assets/pdf.svg" width="32">](assets/en_US/CV_J_Goutin.pdf) / [web](assets/en_US/CV_J_Goutin)
+
+[Projects](assets/en_US/projects)
+
 ## Expertise
 
 *TL;DR: I am mainly a 
@@ -74,7 +78,7 @@ As much as possible, I manage the cloud using infrastructure as code with
 
 Furthermore, I also have some experience with 
 <img src="assets/microsoftazure.svg" width="16"> Microsoft Azure 
-(Including Microsoft 365 administration), 
+(including Microsoft 365 administration),
 <img src="assets/openstack.svg" width="16"> OpenStack, and 
 <img src="assets/alibabacloud.svg" width="16"> Alibaba Cloud.
 
@@ -82,8 +86,20 @@ Furthermore, I also have some experience with
 
 I have solid experience with CI/CD pipelines, and I am able to fully automate them from 
 testing to deployment in cloud environments with 
-<img src="assets/githubactions.svg" width="16"> GitHub Actions and 
+<img src="assets/githubactions.svg" width="16"> GitHub Actions, 
+<img src="assets/gitlab.svg" width="16"> GitLab CI/CD, and 
 <img src="assets/azurepipelines.svg" width="16"> Azure Pipeline.
+
+### Artificial Intelligence & LLM
+
+I have experience in deploying and managing language models in production (LLMOps), 
+including architecting enterprise AI platforms with data governance.
+
+I have implemented RAG (Retrieval-Augmented Generation) systems to enrich LLM responses 
+with internal documents, as well as AI chatbots and development assistants.
+
+My experience includes using <img src="assets/amazonaws.svg" width="16"> AWS Bedrock 
+for access to various language models.
 
 ### System administration
 
@@ -110,10 +126,10 @@ I also have experience in
 <img src="assets/windows.svg" width="16"> Microsoft Windows 
 (almost all versions, but not as a server).
 
-### Data analytic
+### Data analytics
 
 My initial formation was scientific, and I switched to software development by building
-data analytic tools for optical engineers and for automating test benches.
+data analytics tools for optical engineers and for automating test benches.
 
 I have experience with 
 <img src="assets/numpy.svg" width="16"> Numpy,
