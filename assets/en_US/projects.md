@@ -10,6 +10,22 @@ This page presents a selection of significant projects completed throughout my c
 
 ---
 
+## stdapi.ai: OpenAI-Compatible API for AWS AI Services
+**August 2025 - Present**
+
+Creation of an open-source API enabling OpenAI SDK compatibility with AWS AI services and Amazon Bedrock models.
+
+End-to-end project realization covering architecture design, full-stack development, AWS infrastructure deployment, technical documentation writing, and go-to-market strategy. The solution provides a compatibility layer bridging OpenAI SDKs with over 40 Amazon Bedrock models and multiple AWS AI services.
+
+Technical implementation integrates Amazon Bedrock for LLM orchestration, Amazon Polly for speech synthesis, Amazon Transcribe for speech-to-text, and Amazon Translate. Multi-modal capabilities span text conversations, image generation, audio processing, and vector embeddings.
+
+Infrastructure deployed on AWS with multi-region architecture, CloudWatch observability, and hardened container images. Dual licensing model (AGPL-3.0 and AWS Marketplace commercial license) established to balance open-source community contribution and enterprise viability.
+
+* Project website: [https://stdapi.ai](https://stdapi.ai)
+* GitHub: [https://github.com/stdapi-ai/stdapi.ai](https://github.com/stdapi-ai/stdapi.ai)
+
+---
+
 ## Enterprise AI/LLM Platform
 **July 2025 - August 2025**
 
