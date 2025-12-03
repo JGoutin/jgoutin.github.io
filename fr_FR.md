@@ -144,6 +144,6 @@ J'ai de l'expérience avec
 et la pile scientifique Python en général.
 
 ---
-Microentreprise enregistrée en France - Siren 978307999 - Siret 97830799900018
+JGoutin-dev SARL au capital de 1000€ - 994495422 R.C.S. Aix-en-Provence
 
 © Tout droit réservé.

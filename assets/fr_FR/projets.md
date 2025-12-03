@@ -302,6 +302,6 @@ Gains: Le logiciel permet d'automatiser et de fiabiliser l'analyse des mesures, 
 
 ---
 
-*Microentreprise enregistrée en France - Siren 978307999 - Siret 97830799900018*
+*JGoutin-dev SARL au capital de 1000€ - 994495422 R.C.S. Aix-en-Provence*
 
 *© Tout droit réservé.*

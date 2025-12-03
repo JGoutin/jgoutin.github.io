@@ -138,6 +138,6 @@ I have experience with
 and the Python scientific stack in general.
 
 ---
-Company registered in France - Siren 978307999 - Siret 97830799900018
+JGoutin-dev SARL - 994495422 R.C.S. Aix-en-Provence, France
 
 © All rights reserved.
