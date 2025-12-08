@@ -2,11 +2,9 @@
 title: Projets - Jérémy Goutin
 ---
 
-[← Retour à la page principale](../../fr_FR)
-
 # Projets
 
-Cette page présente une sélection de projets significatifs réalisés au cours de ma carrière.
+Cette page présente une sélection de projets significatifs réalisés au cours de plus de 10 ans d'expérience.
 
 ---
 
@@ -298,10 +296,10 @@ Gains: Le logiciel permet d'automatiser et de fiabiliser l'analyse des mesures, 
 
 ---
 
-[← Retour à la page principale](../../fr_FR)
+[Services →](../services) | [Contact →](../contact) | [Accueil →](../../fr_FR)
 
 ---
 
-*JGoutin-dev SARL au capital de 1000€ - 994495422 R.C.S. Aix-en-Provence*
+JGoutin-dev SARL - 994495422 R.C.S. Aix-en-Provence, France
 
-*© Tout droit réservé.*
+© Tous droits réservés.

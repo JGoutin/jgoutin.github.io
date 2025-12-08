@@ -42,7 +42,7 @@ jobs:
         uses: docker://pandoc/latex:3
         with:
           args: >-
-            assets/fr_FR/CV_J_Goutin.md
+            fr_FR/CV_J_Goutin.md
             -o _site/assets/fr_FR/CV_J_Goutin.pdf
             --pdf-engine=xelatex
             -V geometry:a4paper
@@ -52,7 +52,7 @@ jobs:
         uses: docker://pandoc/latex:3
         with:
           args: >-
-            assets/en_US/CV_J_Goutin.md
+            en_US/CV_J_Goutin.md
             -o _site/assets/en_US/CV_J_Goutin.pdf
             --pdf-engine=xelatex
             -V geometry:a4paper

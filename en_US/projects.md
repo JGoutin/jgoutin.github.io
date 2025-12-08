@@ -2,11 +2,9 @@
 title: Projects - Jérémy Goutin
 ---
 
-[← Back to main page](../../index)
-
 # Projects
 
-This page presents a selection of significant projects completed throughout my career.
+This page presents a selection of significant projects completed over 10+ years of experience.
 
 ---
 
@@ -298,10 +296,10 @@ Benefits: The software enables automation and reliability of measurement analysi
 
 ---
 
-[← Back to main page](../../index)
+[Services →](../services) | [Contact →](../contact) | [Home →](../../index)
 
 ---
 
-*JGoutin-dev SARL - 994495422 R.C.S. Aix-en-Provence, France*
+JGoutin-dev SARL - 994495422 R.C.S. Aix-en-Provence, France
 
-*© All rights reserved.*
+© All rights reserved.

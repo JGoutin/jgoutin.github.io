@@ -3,11 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 {% seo %}</head><body><header>
-<div class="container"><h1>{{ site.title }}</h1><p>{{ page.desc }}</p>
+<div class="container"><img src="{{ '/assets/logo.svg' | relative_url }}" alt="JGoutin-dev" width="200"><h1>{{ site.title }}</h1><p>{{ page.desc }}</p>
 <section id="languages">
 <a href="{{ '/' | relative_url }}" class="btn">English 🇬🇧</a>
 <a href="{{ '/fr_FR' | relative_url }}" class="btn">Français 🇫🇷</a>
 </section></div></header>
-<div class="container"><section id="main_content">
-<img src="assets/photo.webp" alt="J.Goutin" class="photo">{{ content }}
+<div class="container"><section id="main_content">{{ content }}
 </section></div></body></html>

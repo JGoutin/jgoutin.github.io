@@ -1,6 +1,7 @@
 ---
-name: J.Goutin
-title: J.Goutin
+name: JGoutin-dev - Enterprise AWS Cloud Solutions
+title: JGoutin-dev
+description: Enterprise software solutions for AWS cloud transformation - Expert consulting, DevOps, and AI-powered applications
 theme: jekyll-theme-hacker
 repository: jgoutin/jgoutin.github.io
 github:
@@ -12,3 +13,4 @@ exclude:
   - Gemfile.lock
   - linkedin/
   - vendor/
+  - github_sponsor/
