@@ -6,34 +6,51 @@ desc: Software solutions available on AWS Marketplace
 
 JGoutin-dev SARL develops software solutions available through the AWS Marketplace.
 
-### stdapi.ai
+### stdapi.ai - OpenAI-Compatible API Gateway for AWS Bedrock
 
 <img src="../assets/stdapi_ai_logo.svg" alt="stdapi.ai" width="200">
 
-**Worried about AI vendor lock-in, high costs, or data privacy?**
+**Deploy any OpenAI-compatible application on AWS Bedrock—no code changes required.**
 
-Meet stdapi.ai - the universal AI API platform that solves the biggest challenges facing teams adopting AI:
+stdapi.ai is a production-ready OpenAI API gateway that gives you instant access to 80+ leading AI models from Claude, Nova, Llama, DeepSeek, and more through AWS Bedrock. Built for enterprises that need data sovereignty, compliance controls, and AWS direct pricing without monthly subscriptions.
 
-**The Problem:**
-- 🔒 **Privacy concerns**: Sending sensitive data to external AI platforms
-- 💸 **High costs**: Expensive AI service pricing from major providers
-- 🔗 **Vendor lock-in**: Difficulty switching between AI models
-- ⚙️ **Integration complexity**: Rewriting code for each AI provider
+#### Why stdapi.ai?
 
-**The Solution:**
+**🔒 Enterprise Compliance & Data Sovereignty**
+All AI inference stays in your AWS account—data never shared with model providers or used for training. Configure allowed AWS regions to meet GDPR, HIPAA, or FedRAMP compliance requirements.
 
-stdapi.ai gives you instant access to 80+ AI models from Amazon, Anthropic, Meta, OpenAI, and others through a single unified API endpoint - with **zero code changes**.
+**💰 AWS Direct Pricing, No Markup**
+Pay-per-use pricing with no subscriptions or monthly minimums. Pay only AWS Bedrock rates for exactly what you use—no capacity commitments required.
 
-**Key Benefits:**
-- **Privacy-First**: All AI processing happens in your AWS account - your data never leaves your infrastructure
-- **Cost-Effective**: Pay 50-70% less for AI with competitive AWS pricing
-- **No Lock-In**: Switch between Claude, Llama, Nova, and other models anytime without code changes
-- **Drop-in Replacement**: Works with popular tools like Open WebUI, LibreChat, and LangChain
-- **Complete AI Suite**: Chat, image generation, audio transcription, translation, and more
+**🚀 Drop-in OpenAI Replacement**
+Full support for chat, embeddings, images, audio (speech/transcription/translation). Works with LangChain, Continue.dev, Open WebUI, n8n, and 1000+ OpenAI-compatible tools—just change the `base_url`.
 
-**Quick Deployment**: Deploy from AWS Marketplace in minutes and start using AI your way.
+**🧠 Access to 80+ Leading Models**
+Claude 4.6+ (reasoning), Nova 2, Llama 4, DeepSeek v3.2, Stable Diffusion, Mistral, Gemini, and more. Switch models instantly without code changes—no vendor lock-in.
 
-[Learn more about stdapi.ai →](https://stdapi.ai/)
+**⚙️ Advanced AWS Bedrock Features**
+Prompt caching, reasoning modes, guardrails, prompt routers, application inference profiles, automatic region optimization, and S3 integration built-in.
+
+**🔐 Built-in Observability & Security**
+OpenTelemetry integration, detailed request logging, API keys in AWS Systems Manager. CORS, proxy headers, SSRF protection, and hardened container images.
+
+#### Who Uses stdapi.ai?
+
+- **DevOps & Platform Teams**: Deploy Open WebUI or LibreChat for your organization with unified AI gateway
+- **Developers & AI Engineers**: Use Claude and Qwen Coder in VS Code, JetBrains IDEs, or any OpenAI-compatible tool
+- **Workflow Automation Teams**: Connect n8n, Make, or Zapier to AWS Bedrock with enterprise-grade AI
+- **Compliance-driven Enterprises**: Meet data sovereignty requirements with region controls and AWS certifications
+- **Cost-conscious Organizations**: Switch from subscription AI services to pay-per-use AWS Bedrock pricing
+- **Teams Migrating from OpenAI**: LangChain, LlamaIndex, Haystack apps work immediately with gradual migration support
+
+#### Quick Deployment
+
+**Community Edition**: Free Docker image for local development
+**Production**: Terraform module with ECS + hardened container via AWS Marketplace
+
+Deploy in minutes and start accessing AWS Bedrock through the OpenAI API standard.
+
+[View Documentation →](https://stdapi.ai/) | [AWS Marketplace →](https://aws.amazon.com/marketplace/pp/prodview-su2dajk5zawpo) | [GitHub →](https://github.com/stdapi-ai/stdapi.ai)
 
 ### AWS Marketplace Profile
 

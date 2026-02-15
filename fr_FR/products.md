@@ -7,34 +7,51 @@ lang: fr_FR
 
 JGoutin-dev SARL développe des solutions logicielles disponibles sur AWS Marketplace.
 
-### stdapi.ai
+### stdapi.ai - Passerelle API compatible OpenAI pour AWS Bedrock
 
 <img src="../assets/stdapi_ai_logo.svg" alt="stdapi.ai" width="200">
 
-**Inquiet du verrouillage fournisseur IA, des coûts élevés ou de la confidentialité des données ?**
+**Déployez n'importe quelle application compatible OpenAI sur AWS Bedrock—sans modification de code.**
 
-Découvrez stdapi.ai - la plateforme d'API IA universelle qui résout les plus grands défis des équipes adoptant l'IA :
+stdapi.ai est une passerelle API OpenAI prête pour la production qui vous donne un accès instantané à plus de 80 modèles IA leaders de Claude, Nova, Llama, DeepSeek, et plus via AWS Bedrock. Conçu pour les entreprises nécessitant souveraineté des données, contrôles de conformité et tarification directe AWS sans abonnements mensuels.
 
-**Le Problème :**
-- 🔒 **Problèmes de confidentialité** : Envoi de données sensibles vers des plateformes IA externes
-- 💸 **Coûts élevés** : Tarification IA coûteuse des grands fournisseurs
-- 🔗 **Verrouillage fournisseur** : Difficulté de changer entre modèles IA
-- ⚙️ **Complexité d'intégration** : Réécriture du code pour chaque fournisseur IA
+#### Pourquoi stdapi.ai ?
 
-**La Solution :**
+**🔒 Conformité Entreprise & Souveraineté des Données**
+Toutes les inférences IA restent dans votre compte AWS—les données ne sont jamais partagées avec les fournisseurs de modèles ni utilisées pour l'entraînement. Configurez les régions AWS autorisées pour répondre aux exigences de conformité RGPD, HIPAA ou FedRAMP.
 
-stdapi.ai vous donne un accès instantané à plus de 80 modèles IA d'Amazon, Anthropic, Meta, OpenAI et d'autres via un seul point d'API unifié - **sans aucun changement de code**.
+**💰 Tarification Directe AWS, Sans Majoration**
+Tarification à l'usage sans abonnements ni minimums mensuels. Payez uniquement les tarifs AWS Bedrock pour ce que vous utilisez réellement—aucun engagement de capacité requis.
 
-**Avantages Clés :**
-- **Confidentialité d'Abord** : Tout le traitement IA se fait dans votre compte AWS - vos données ne quittent jamais votre infrastructure
-- **Économique** : Payez 50-70% moins cher pour l'IA avec les tarifs compétitifs AWS
-- **Sans Verrouillage** : Changez entre Claude, Llama, Nova et autres modèles à tout moment sans modification de code
-- **Remplacement Direct** : Fonctionne avec les outils populaires comme Open WebUI, LibreChat et LangChain
-- **Suite IA Complète** : Chat, génération d'images, transcription audio, traduction, et plus
+**🚀 Remplacement Direct d'OpenAI**
+Support complet pour chat, embeddings, images, audio (synthèse vocale/transcription/traduction). Fonctionne avec LangChain, Continue.dev, Open WebUI, n8n, et plus de 1000 outils compatibles OpenAI—modifiez simplement le `base_url`.
 
-**Déploiement Rapide** : Déployez depuis AWS Marketplace en quelques minutes et commencez à utiliser l'IA à votre façon.
+**🧠 Accès à Plus de 80 Modèles Leaders**
+Claude 4.6+ (raisonnement), Nova 2, Llama 4, DeepSeek v3.2, Stable Diffusion, Mistral, Gemini, et plus. Changez de modèles instantanément sans modifications de code—aucun verrouillage fournisseur.
 
-[En savoir plus sur stdapi.ai →](https://stdapi.ai/)
+**⚙️ Fonctionnalités Avancées AWS Bedrock**
+Mise en cache de prompts, modes de raisonnement, garde-fous, routeurs de prompts, profils d'inférence d'application, optimisation automatique de région et intégration S3 intégrées.
+
+**🔐 Observabilité & Sécurité Intégrées**
+Intégration OpenTelemetry, journalisation détaillée des requêtes, clés API dans AWS Systems Manager. Protection CORS, en-têtes proxy, protection SSRF et images de conteneur renforcées.
+
+#### Qui Utilise stdapi.ai ?
+
+- **Équipes DevOps & Plateforme** : Déployez Open WebUI ou LibreChat pour votre organisation avec une passerelle IA unifiée
+- **Développeurs & Ingénieurs IA** : Utilisez Claude et Qwen Coder dans VS Code, IDEs JetBrains ou tout outil compatible OpenAI
+- **Équipes d'Automatisation Workflow** : Connectez n8n, Make ou Zapier à AWS Bedrock avec une IA de niveau entreprise
+- **Entreprises Axées Conformité** : Répondez aux exigences de souveraineté des données avec contrôles régionaux et certifications AWS
+- **Organisations Soucieuses des Coûts** : Passez des services IA par abonnement à la tarification à l'usage AWS Bedrock
+- **Équipes Migrant depuis OpenAI** : Les applications LangChain, LlamaIndex, Haystack fonctionnent immédiatement avec support de migration progressive
+
+#### Déploiement Rapide
+
+**Édition Communauté** : Image Docker gratuite pour le développement local
+**Production** : Module Terraform avec ECS + conteneur renforcé via AWS Marketplace
+
+Déployez en quelques minutes et commencez à accéder à AWS Bedrock via le standard API OpenAI.
+
+[Voir la Documentation →](https://stdapi.ai/) | [AWS Marketplace →](https://aws.amazon.com/marketplace/pp/prodview-su2dajk5zawpo) | [GitHub →](https://github.com/stdapi-ai/stdapi.ai)
 
 ### Profil AWS Marketplace
 
