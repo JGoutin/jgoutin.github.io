@@ -8,12 +8,12 @@ Cette page présente une sélection de projets significatifs réalisés au cours
 
 ---
 
-## stdapi.ai : API Compatible OpenAI pour les Services IA d'AWS
+## stdapi.ai : API Compatible OpenAI & Anthropic pour les Services IA d'AWS
 **Août 2025 - Aujourd'hui**
 
-Création d'une API open source permettant la compatibilité des SDK OpenAI avec les services IA d'AWS et les modèles Amazon Bedrock.
+Création d'une API open source permettant la compatibilité des SDK OpenAI et Anthropic avec les services IA d'AWS et les modèles Amazon Bedrock.
 
-Réalisation complète du projet couvrant la conception d'architecture, le développement full-stack, le déploiement d'infrastructure AWS, la rédaction de documentation technique et la stratégie de mise sur le marché. La solution fournit une couche de compatibilité établissant un pont entre les SDK OpenAI et plus de 40 modèles Amazon Bedrock ainsi que plusieurs services IA d'AWS.
+Réalisation complète du projet couvrant la conception d'architecture, le développement full-stack, le déploiement d'infrastructure AWS, la rédaction de documentation technique et la stratégie de mise sur le marché. La solution fournit une couche de compatibilité établissant un pont entre les SDK OpenAI et Anthropic et plus de 40 modèles Amazon Bedrock ainsi que plusieurs services IA d'AWS.
 
 Implémentation technique intégrant Amazon Bedrock pour l'orchestration des LLM, Amazon Polly pour la synthèse vocale, Amazon Transcribe pour la transcription audio et Amazon Translate. Capacités multi-modales couvrant les conversations textuelles, la génération d'images, le traitement audio et les embeddings vectoriels.
 
