@@ -8,11 +8,11 @@ JGoutin-dev delivers enterprise software solutions that accelerate your cloud tr
 
 ### What We Offer
 
-**[Expert Consulting Services →](en_US/services)**
-Transform your business with specialized expertise in cloud architecture, software development, and DevOps. Available for missions and projects to help you achieve your technical and business objectives.
+**[stdapi.ai - AI Gateway for AWS Bedrock →](en_US/products)**
+Run 80+ AI models (Claude, Kimi K2, MiniMax, Qwen3) on AWS Bedrock through OpenAI & Anthropic APIs. Drop-in compatible with 1000+ tools. **14-day free trial on AWS Marketplace.**
 
-**[AWS Marketplace Solutions →](en_US/products)**
-Enterprise-grade software products available on AWS Marketplace, designed to streamline operations and accelerate time-to-market.
+**[Expert Consulting Services →](en_US/services)**
+Transform your business with specialized expertise in cloud architecture, Python development, and DevOps. Available for missions and projects.
 
 ### Why Choose JGoutin-dev
 

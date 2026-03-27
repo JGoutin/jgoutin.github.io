@@ -9,11 +9,11 @@ JGoutin-dev livre des solutions logicielles d'entreprise qui accélèrent votre 
 
 ### Notre Offre
 
-**[Services de Conseil Expert →](fr_FR/services)**
-Transformez votre entreprise avec une expertise spécialisée en architecture cloud, développement logiciel et DevOps. Disponible pour missions et projets pour vous aider à atteindre vos objectifs techniques et business.
+**[stdapi.ai - Passerelle IA pour AWS Bedrock →](fr_FR/products)**
+Accédez à plus de 80 modèles IA (Claude, Kimi K2, MiniMax, Qwen3) sur AWS Bedrock via les API OpenAI & Anthropic. Compatible drop-in avec plus de 1000 outils. **Essai gratuit de 14 jours sur AWS Marketplace.**
 
-**[Solutions AWS Marketplace →](fr_FR/products)**
-Produits logiciels de qualité entreprise disponibles sur AWS Marketplace, conçus pour optimiser vos opérations et accélérer votre time-to-market.
+**[Services de Conseil Expert →](fr_FR/services)**
+Transformez votre entreprise avec une expertise spécialisée en architecture cloud, développement Python et DevOps. Disponible pour missions et projets.
 
 ### Pourquoi Choisir JGoutin-dev
 
