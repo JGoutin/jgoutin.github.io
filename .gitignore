@@ -3,8 +3,12 @@
 .settings/
 .vscode/
 .idea/
+.output.txt
 
-# Jekyll
-.bundle/
-Gemfile.lock
-_site/
+# Zensical
+site/
+.cache/
+
+# uv / Python
+.venv/
+__pycache__/

@@ -1,0 +1,126 @@
+/* Brand colors derived from the JGoutin-dev logo SVG.
+ *
+ * The logo uses bright green (#b5e853) on black (#000000); we expose the
+ * green as the Zensical/Material primary + accent color. A darker green
+ * (#7fb336) is used for hover/contrast states. */
+
+:root {
+  --jg-green:         #b5e853;
+  --jg-green-light:   #d6f29a;
+  --jg-green-dark:    #7fb336;
+  --jg-green-darker:  #3c5c0a;
+  --jg-green-darkest: #223301;
+  --jg-black:         #0d0d0d;
+}
+
+/* Light mode (default scheme) -- header and links use the brand green;
+ * keep text dark for readability against the green header. */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--jg-green);
+  --md-primary-fg-color--light:  var(--jg-green-light);
+  --md-primary-fg-color--dark:   var(--jg-green-dark);
+  --md-primary-bg-color:         var(--jg-black);
+  --md-primary-bg-color--light:  rgba(13, 13, 13, 0.7);
+
+  --md-accent-fg-color:          var(--jg-green-darker);
+  --md-accent-fg-color--transparent: rgba(79, 122, 24, 0.1);
+  --md-accent-bg-color:          #ffffff;
+  --md-accent-bg-color--light:   rgba(255, 255, 255, 0.7);
+
+  --md-typeset-a-color:          var(--jg-green-darker);
+}
+
+/* Dark mode (slate scheme) -- header is black, accents are bright green. */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:         var(--jg-green-darker);
+  --md-primary-fg-color--light:  var(--jg-green-dark);
+  --md-primary-fg-color--dark:   var(--jg-green-darkest);
+  --md-primary-bg-color:         var(--jg-green);
+  --md-primary-bg-color--light:  rgba(181, 232, 83, 0.7);
+
+  --md-accent-fg-color:              var(--jg-green);
+  --md-accent-fg-color--transparent: var(--jg-green-darkest);
+  --md-default-fg-color--light:      var(--jg-green-dark);
+  --md-accent-bg-color:              var(--jg-black);
+  --md-accent-bg-color--light:       var(--jg-green-darkest);
+  --md-typeset-a-color:              var(--jg-green);
+}
+
+/* Inline icon sizing helpers used in Markdown via Attribute Lists.
+ * Usage: `:simple-python:{ .lg }` for an inline brand icon, or
+ * `:fontawesome-brands-github:{ .xl }` for a large social icon. */
+.md-typeset .lg svg,
+.md-typeset .lg.twemoji svg {
+  height: 1.15em;
+  width:  1.15em;
+  vertical-align: -0.18em;
+}
+.md-typeset .xl svg,
+.md-typeset .xl.twemoji svg {
+  height: 1.6em;
+  width:  1.6em;
+  vertical-align: -0.35em;
+}
+/* Hero photo: round portrait floated to the right of the lead paragraph. */
+.md-typeset .hero-photo {
+  border-radius: 50%;
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 150px;
+}
+/* Brand-coloured success check used in feature lists. */
+.md-typeset .check {
+  color: var(--jg-green-dark);
+}
+[data-md-color-scheme="slate"] .md-typeset .check {
+  color: var(--jg-green);
+}
+
+/* Header: brand-green site title and a larger logo. */
+.md-header__title,
+.md-header__topic,
+.md-header__topic .md-ellipsis {
+  color: var(--jg-green);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__topic,
+[data-md-color-scheme="slate"] .md-header__topic .md-ellipsis {
+  color: var(--jg-green);
+}
+.md-header__button.md-logo {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: auto;
+}
+
+/* In-page headings: brand-green titles for a consistent identity.
+ * Use a darker shade in light mode for contrast/readability,
+ * and the bright brand green in dark mode. */
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2,
+[data-md-color-scheme="default"] .md-typeset h3,
+[data-md-color-scheme="default"] .md-typeset h4,
+[data-md-color-scheme="default"] .md-typeset h5,
+[data-md-color-scheme="default"] .md-typeset h6 {
+  color: var(--jg-green-darker);
+}
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: var(--jg-green);
+}
+
+/* Hide no-print elements when printing/PDF export */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

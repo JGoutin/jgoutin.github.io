@@ -4,7 +4,7 @@ I'm **Jérémy Goutin**, a freelance **Solutions Architect** specializing in Pyt
 
 ## What I'm Building
 
-I'm currently focused on **[stdapi.ai](https://stdapi.ai)** — an open-source API that brings OpenAI SDK compatibility to AWS AI services and 40+ Amazon Bedrock models. This project bridges the gap between OpenAI's developer experience and AWS's powerful AI infrastructure, enabling enterprises to leverage AWS while using familiar OpenAI SDKs.
+I'm currently focused on **[stdapi.ai](https://stdapi.ai)** — an open-source API that brings OpenAI SDK compatibility to AWS AI services and 80+ Amazon Bedrock models. This project bridges the gap between OpenAI's developer experience and AWS's powerful AI infrastructure, enabling enterprises to leverage AWS while using familiar OpenAI SDKs.
 
 ## My Open Source Work
 
