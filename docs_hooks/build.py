@@ -3,18 +3,23 @@
 Runs the Zensical build for each language, injects JSON-LD and Open Graph
 metadata into every generated HTML page, emits ``llms.txt`` and
 ``llms-full.txt`` for LLM discovery, copies root-level assets (CNAME,
-robots.txt, shared images), renders CV PDFs with pandoc + WeasyPrint, and
-rasterises the Open Graph image.
+robots.txt, shared images), renders CV PDFs with pandoc + WeasyPrint,
+rasterises the Open Graph image, and vendors third-party CDN assets
+referenced from the Zensical JS bundle.
 """
 
+import hashlib
 import json
 import re
 import shutil
 import tempfile
 import tomllib
+import urllib.error
+import urllib.request
 from dataclasses import dataclass
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any, NamedTuple, Self
+from urllib.parse import urlparse
 
 import cairosvg
 import pypandoc
@@ -42,6 +47,17 @@ _NO_PRINT_BLOCK_RE = re.compile(
 )
 _NO_PRINT_LINE_RE = re.compile(r"^.*no-print.*$", re.MULTILINE)
 _MKDOCS_ONLY_KEYS = frozenset({"hide"})
+
+# CDN hosts whose assets we vendor locally. The Zensical JS bundle
+# references these as string literals; we replace them post-build with
+# site-relative paths so no page request ever leaves the origin.
+_VENDORED_CDN_HOSTS: frozenset[str] = frozenset({"unpkg.com", "cdn.jsdelivr.net"})
+# Liberal URL match inside minified JS: stops at whitespace, quotes,
+# parens, angle brackets, or commas — all characters that cannot appear
+# inside a real URL literal in the bundle.
+_CDN_URL_RE = re.compile(r"""https?://[^\s"'()<>,`]+""")
+_VENDOR_DIR_REL = "assets/vendor"
+_VENDOR_FETCH_TIMEOUT = 30.0
 
 type NavPage = tuple[str, str, str]  # title, url, source filename
 type NavSection = tuple[str, list[NavPage]]  # section name, pages
@@ -361,6 +377,93 @@ def _copy_root_files() -> None:
         shutil.copytree(ROOT_SRC, SITE, dirs_exist_ok=True)
 
 
+def _vendor_local_name(url: str) -> str:
+    """Derive a stable local filename for a vendored CDN URL.
+
+    Uses a 16-char prefix of the URL's SHA-256 so identical URLs always
+    map to the same cached file, and the original file extension so the
+    web server serves a correct ``Content-Type``. Defaults to ``.js``
+    when the URL has no extension.
+    """
+    suffix = PurePosixPath(urlparse(url).path).suffix or ".js"
+    digest = hashlib.sha256(url.encode()).hexdigest()[:16]
+    return f"{digest}{suffix}"
+
+
+def _vendor_fetch(url: str, dest: Path) -> bool:
+    """Download ``url`` to ``dest`` if not already present.
+
+    Returns ``True`` on success (or if the file is already cached),
+    ``False`` on any network/IO failure. Failures are logged but do
+    not raise, so a transient CDN outage cannot break the build —
+    the original URL is left in place and will simply load from the
+    CDN at runtime as before.
+    """
+    if dest.exists() and dest.stat().st_size > 0:
+        return True
+    try:
+        with urllib.request.urlopen(url, timeout=_VENDOR_FETCH_TIMEOUT) as response:
+            dest.write_bytes(response.read())
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        print(f"[vendor] WARN: could not fetch {url}: {exc}")
+        return False
+    return True
+
+
+def _vendor_cdn_assets(site: Site) -> None:
+    """Vendor third-party CDN URLs found in the Zensical JS bundle.
+
+    The Zensical ``bundle.*.min.js`` embeds string literals like
+    ``https://unpkg.com/glightbox@3/dist/js/glightbox.min.js``. Some
+    of these are loaded eagerly on every page (glightbox in particular);
+    we scan each bundle, download the referenced assets into
+    ``site/assets/vendor/``, and rewrite each literal to a site-relative
+    path.
+
+    Robust by design:
+
+    * Idempotent — cached downloads are reused across rebuilds.
+    * CDN-agnostic — any URL whose host is in :data:`_VENDORED_CDN_HOSTS`
+      is vendored; other URLs (runtime API calls, XML namespaces) are
+      left untouched.
+    * Failure-tolerant — a download failure leaves that URL in place
+      and logs a warning; other URLs still get vendored.
+    * No-op when the bundle no longer references any matching CDN
+      (e.g. after a Zensical upgrade that drops a dependency) — the
+      function silently does nothing instead of failing.
+    """
+    bundles = sorted(site.site_dir.glob("assets/javascripts/bundle.*.min.js"))
+    if not bundles:
+        return
+    vendor_dir = SITE / _VENDOR_DIR_REL
+    for bundle in bundles:
+        content = bundle.read_text("utf-8")
+        urls = sorted(
+            {
+                url
+                for url in _CDN_URL_RE.findall(content)
+                if urlparse(url).hostname in _VENDORED_CDN_HOSTS
+            }
+        )
+        if not urls:
+            continue
+        vendor_dir.mkdir(parents=True, exist_ok=True)
+        mapping: dict[str, str] = {}
+        for url in urls:
+            local_name = _vendor_local_name(url)
+            if _vendor_fetch(url, vendor_dir / local_name):
+                mapping[url] = f"/{_VENDOR_DIR_REL}/{local_name}"
+        if not mapping:
+            continue
+        for old, new in mapping.items():
+            content = content.replace(old, new)
+        bundle.write_text(content, "utf-8")
+        print(
+            f"[vendor] {bundle.relative_to(ROOT)}: "
+            f"vendored {len(mapping)}/{len(urls)} CDN URL(s)"
+        )
+
+
 def build() -> None:
     """Run the full pipeline: Zensical + SEO + llms + PDFs + assets."""
     for lang in LANGUAGES:
@@ -369,6 +472,7 @@ def build() -> None:
         _inject_seo_metadata(site)
         _generate_llms_files(site)
         _render_cv_pdf(site)
+        _vendor_cdn_assets(site)
     _copy_root_files()
     _render_og_png()
 

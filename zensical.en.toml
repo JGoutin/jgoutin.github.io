@@ -27,8 +27,9 @@ nav = [
 
 [project.theme]
 language = "en"
-logo = "../assets/jgoutin-dev.svg"
+logo = "../assets/logo.svg"
 favicon = "../assets/logo.svg"
+font = false
 features = [
     "navigation.instant",
     "navigation.instant.prefetch",
@@ -39,7 +40,6 @@ features = [
     "navigation.indexes",
     "search.highlight",
     "content.code.copy",
-    "content.tooltips",
 ]
 
 [[project.theme.palette]]
@@ -97,31 +97,17 @@ name = "Email"
 hostname = "https://jgoutin.dev"
 exclude = ["_root/*"]
 
-[project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
-[project.markdown_extensions.def_list]
-[project.markdown_extensions.footnotes]
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
 permalink = true
-[project.markdown_extensions.pymdownx.betterem]
-[project.markdown_extensions.pymdownx.caret]
-[project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.emoji]
 emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
 pygments_lang_class = true
-[project.markdown_extensions.pymdownx.inlinehilite]
-[project.markdown_extensions.pymdownx.keys]
-[project.markdown_extensions.pymdownx.mark]
-[project.markdown_extensions.pymdownx.smartsymbols]
-[project.markdown_extensions.pymdownx.snippets]
 [project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
-[project.markdown_extensions.pymdownx.tasklist]
-custom_checkbox = true
-[project.markdown_extensions.pymdownx.tilde]

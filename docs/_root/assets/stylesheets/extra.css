@@ -11,6 +11,54 @@
   --jg-green-darker:  #3c5c0a;
   --jg-green-darkest: #223301;
   --jg-black:         #0d0d0d;
+
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+}
+
+/* Self-hosted fonts (replaces Google Fonts; only the weights actually used
+ * by the theme CSS: 400, 500, 700 + italic 400). */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono-Bold.woff2") format("woff2");
 }
 
 /* Light mode (default scheme) -- header and links use the brand green;
@@ -49,14 +97,12 @@
 /* Inline icon sizing helpers used in Markdown via Attribute Lists.
  * Usage: `:simple-python:{ .lg }` for an inline brand icon, or
  * `:fontawesome-brands-github:{ .xl }` for a large social icon. */
-.md-typeset .lg svg,
-.md-typeset .lg.twemoji svg {
+.md-typeset .lg svg {
   height: 1.15em;
   width:  1.15em;
   vertical-align: -0.18em;
 }
-.md-typeset .xl svg,
-.md-typeset .xl.twemoji svg {
+.md-typeset .xl svg {
   height: 1.6em;
   width:  1.6em;
   vertical-align: -0.35em;
