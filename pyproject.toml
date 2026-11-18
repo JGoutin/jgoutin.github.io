@@ -1,0 +1,15 @@
+[project]
+name = "jgoutin-dev"
+version = "0.0.0"
+description = "Source for https://jgoutin.dev/."
+authors = [{ name = "Jérémy Goutin", email = "contact@jgoutin.dev" }]
+requires-python = ">=3.15"
+dependencies = [
+    "zensical",
+    "pypandoc-binary",
+    "weasyprint",
+    "cairosvg",
+]
+
+[tool.uv]
+exclude-newer = "7 days"

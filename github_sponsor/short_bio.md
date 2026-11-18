@@ -1,0 +1,1 @@
+Freelance Solutions Architect specializing in Python, AWS, and DevOps. Making cloud & AI accessible to developers.
